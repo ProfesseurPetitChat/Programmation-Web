@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta charset="UTF-8" > 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+	
+	<form action="ajoutPatientbs.php" method="POST" style="margin:0 auto;width:600px;max-width:100%">
+		
+			<div class="row g-3 justify-content-center bg-light pb-3 rounded">
+				<h3>Ajouter un patient</h3>
+				<div class="col-12">
+					<label for="NomPatient" class="form-label">Nom</label>
+					<input type="text" class="form-control" id="NomPatient" name="NomPatient" autocomplete="off">		
+				</div>
+				<div class="col-12">
+					<label for="DateDeNaissance" class="form-label">Date de naissance</label>
+					<input type="date" class="form-control" id="DateDeNaissance" name="DateDeNaissance" >		
+				</div>
+				<div class="col-sm-6">
+					<button type="submit" class="btn btn-primary btn-block">Ajouter</button>
+				</div>
+			</div>
+		
+	</form>
+</div>
+</body>
+</html>

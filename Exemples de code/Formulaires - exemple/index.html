@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+		<title>Formulaire</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<form class="myForm bg-light mt-3">
+				<div class="row g-3">
+					<div class="col-sm-6">
+						<label for="prenom" class="form-label">Prénom</label>
+						<input type="text" class="form-control" id="prenom">					
+					</div>
+					<div class="col-sm-6">
+						<label for="nom" class="form-label">Nom</label>
+						<input type="text" class="form-control" id="nom">
+					</div>				
+					<div class="col-12">
+						<label for="username" class="form-label">Login</label>
+						<div class="input-group">
+							<span class="input-group-text">@</span>
+							<input type="text" class="form-control" id="username" placeholder="Login">
+						</div>
+					</div>
+					<div class="col-12">
+						<h6>Sexe </h6> 
+						<div class="form-check form-check-inline">
+							<input id="shomme" name="sexe" type="radio" class="form-check-input">
+							<label class="form-check-label" for="shomme">Homme</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input id="sfemme" name="sexe" type="radio" class="form-check-input">
+							<label class="form-check-label" for="sfemme">Femme</label>
+						</div>
+					</div>	
+					<div class="col-12">
+						<h6>Situation  </h6>
+						<div class="btn-group">
+						  <input type="radio" class="btn-check" name="situation" id="marié" checked>
+						  <label class="btn btn-outline-secondary" for="marié">Marié(e)</label>
+						  <input type="radio" class="btn-check" name="situation" id="couple" >
+						  <label class="btn btn-outline-secondary" for="couple">En couple</label>
+						  <input type="radio" class="btn-check" name="situation" id="célibataire" >
+						  <label class="btn btn-outline-secondary" for="célibataire">Célibataire</label>
+						</div>					
+					</div>						
+					<div class="col-md-3">
+						<label for="cp" class="form-label">Code Postal</label>
+						<input type="text" class="form-control" id="cp" >
+					</div>					
+					<div class="col-md-5">
+						<label for="ville" class="form-label">Ville</label>
+						<input type="text" class="form-control" id="ville" >
+					</div>
+					<div class="col-md-4">
+						<label for="pays" class="form-label">Pays</label>
+						<select class="form-select" id="pays" >
+							<option value="">Choisir...</option>
+							<option>France</option>
+							<option>Italie</option>
+							<option>Espagne</option>
+						</select>
+					</div>
+					<div class="col-12">
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="newsletter">
+							<label class="form-check-label" for="newsletter">Je souhaite m'inscrire à la newsletter.</label>
+						</div>
+					</div>
+				</div>
+				 <div class="row justify-content-center mt-3">
+					<div class="col-sm-6">
+						<button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+		
+	</body>
+</html>
